@@ -1,0 +1,41 @@
+.but1 {
+	padding-left: 450px;
+} 
+/* Hijau */
+
+.but2 {
+	padding-left: 10px;
+}
+ /* Biru */
+
+.but3{
+	padding-left: 10px;
+} 
+/* Merah */
+
+.but4 
+{
+	padding-left: 10px;
+}
+
+ /* Abu-abu */
+.but5 {
+	padding-left: 10px;} 
+/* Hitam */
+
+.on{
+	color:white;
+	background-color: #7B68EE}
+
+.sub{
+	background-color:  #FFA500;
+}
+
+.com{
+	background-color: #228B22; 
+}
+
+
+.close{
+	color:white;
+	background-color:black;}
