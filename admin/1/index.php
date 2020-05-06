@@ -71,7 +71,7 @@ include "auth_user.php";
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-					<center><img src="../aset/foto/komputer1.jpg" width="950" height="420" /></center>
+					<center><img src="../aset/foto/desk.jpeg" width="950" height="420" /></center>
                 </div><!-- /.box-header -->
                 <div class="box-body">
 					

@@ -1,5 +1,5 @@
 				<thead>
-					<tr>
+					<tr bgcolor="#66CDAA">
 						<th>No Tiket</th>
 						<th>NIK</th>
 						<th>Nama</th>
@@ -26,7 +26,8 @@
 						while ($mhs = mysqli_fetch_array ($querymhs)){
 							
 							echo "
-								<tr>
+								<tr bgcolor='#DCDCDC'>
+
 									<td>$mhs[no_tiket]</td>
 									<td>$mhs[nik]</td>
 									<td>$mhs[nama]</td>

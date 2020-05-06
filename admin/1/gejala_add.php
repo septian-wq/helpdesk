@@ -36,21 +36,22 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'soykoola@gmail.com';                 // SMTP username
-    $mail->Password = '083878382918';                           // SMTP password
+    $mail->Username = 'hrconsulting.tcu@gmail.com';                 // SMTP username
+    $mail->Password = 'Sekre123';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('soykoola@gmail.com', 'Helpdesk');
-    $mail->addAddress($email, 'namapenerima');     // Add a recipient
+    $mail->setFrom('hrconsulting.tcu@gmail.com', 'Helpdesk');
+    $mail->addAddress($email, $nama);     // Add a recipient
     
     $body             = 
         "<body style='margin: 10px;'>
         <div style='width: 640px; font-family: Helvetica, sans-serif; font-size: 13px; padding:10px; line-height:150%; border:#eaeaea solid 10px;'>
         <br>
 
-        <strong>Tiket Nomer </strong>".$no_tiket."<strong>, untuk masalah tersebut sudah kami terima dan sedang dikerjakan. [MOHON UNTUK TIDAK REPLY EMAIL INI]</strong><p>
+        <strong>Tiket Nomer </strong>".$no_tiket."<strong>, untuk masalah tersebut sudah kami terima dan sedang dikerjakan.</strong><br> 
+        <strong>[MOHON UNTUK TIDAK REPLY EMAIL INI]</strong><p>
         <b>Dengan Hormat,</b><br>
         <b>Bapak/Ibu </b>".$nama."<p>
 

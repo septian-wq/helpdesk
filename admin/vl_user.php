@@ -10,7 +10,7 @@ $query = mysqli_query ($konek, "SELECT * FROM user WHERE Username='$Username' AN
 // Validasi Login
 if ($_POST){
 	
-	$queryuser = mysqli_query ($konek, "SELECT * FROM user WHERE Username='$Username'");
+	$queryuser = mysqli_query ($konek, "SELECT * FROM user WHERE Username='$Username' AND Password='$Password'");
 		
 	$user = mysqli_fetch_array ($queryuser);
 	

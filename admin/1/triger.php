@@ -43,8 +43,9 @@
 								<div class="form-row">
 								<div class="ol-xs-12">
 								 <body>
+
 								 	<p> Nomer Tiket : <?php echo $mhs["noti"]; ?></p>
-								 	<p> Tangga Update : <?php echo date('l', strtotime($mhs["date"])).", ". $mhs["date"]; ?></p>
+								 	<p> Tanggal Update : <?php echo date('l', strtotime($mhs["date"])).", ". $mhs["date"]; ?></p>
 									<p> Tanggal Submit : <?php echo $mhs["tgl_proses"]; ?> </p>
 								 	<p> This request is : <?php echo $mhs["old_data"]; ?> by <?php echo $mhs["ket"]; ?> </p>
 									<p> Dengan Follow Up : <?php echo $mhs["new_data"]; ?> </p>

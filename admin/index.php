@@ -55,6 +55,11 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
     <!-- iCheck -->
     <link rel="stylesheet" href="aset/plugins/iCheck/square/blue.css">
   </head>
+        <style>
+          body{
+            background-image: url("../aset/foto/ba.png");
+          }
+        </style>
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
