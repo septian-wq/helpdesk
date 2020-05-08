@@ -185,7 +185,7 @@ while($mhs = mysqli_fetch_array($querymhs)){
 									      <option>Telephone</option>
 									      <option>WhatsApp</option>
 									      <option>Email</option>
-									      <option>5</option>
+									      <!-- <option>5</option> -->
 									    </select>	
 										<!-- <input name="jalur_helpdesk" type="text" class="form-control" placeholder="Jalur Helpdesk"/> -->
 									</div>
@@ -200,9 +200,9 @@ while($mhs = mysqli_fetch_array($querymhs)){
 										  
 									      <option>Komunikasi</option>
 									      <option>Informasi</option>
-									      <option>3</option>
+									     <!--  <option>3</option>
 									      <option>4</option>
-									      <option>5</option>
+									      <option>5</option> -->
 									    </select>						
 											<!-- <input name="kategori" type="text" class="form-control" placeholder="kategori"/> -->
 									</div>
