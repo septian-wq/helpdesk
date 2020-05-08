@@ -1,12 +1,13 @@
 
 <?php  
 //export.php  
-$connect = mysqli_connect("localhost", "root", "", "andd2478_spk");
+include "../koneksi.php";
+
 $output = '';
 if(isset($_POST["export"]))
 {
  $query = "SELECT * FROM helpdesk";
- $result = mysqli_query($connect, $query);
+ $result = mysqli_query($konek, $query);
  if(mysqli_num_rows($result) > 0)
  {
   $output .= '

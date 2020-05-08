@@ -1,8 +1,6 @@
 <?php
 
 include "../koneksi.php";
-mysql_connect("localhost","root");
- mysql_select_db("andd2478_spk");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';

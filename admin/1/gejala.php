@@ -7,9 +7,6 @@ session_start();
 include "../koneksi.php";
 include "auth_user.php";
 
-// mysql_connect("localhost","helpdesk","helpdesk@corpu");
-// mysql_select_db("helpdesk");
-
 $query = "SELECT max(no_tiket) as maxKode FROM helpdesk";
 $hasil = mysqli_query($konek,$query);
 $data = mysqli_fetch_array($hasil);
@@ -22,10 +19,10 @@ $noTiket = $char . sprintf("%05s", $noUrut);
 $sql = "SELECT * FROM helpdesk";  
 $result = mysqli_query($konek, $sql);
 
-$sub=mysql_query("SELECT * FROM helpdesk WHERE status='Submitted'"); // untuk Submited
-$com=mysql_query("SELECT * FROM helpdesk WHERE status='Completed'"); // untuk Completed
-$pro=mysql_query("SELECT * FROM helpdesk WHERE status='On Process'"); // untuk On Process
-$clo=mysql_query("SELECT * FROM helpdesk WHERE status='Closed'"); // untuk Closed
+$sub=mysqli_query($konek, "SELECT * FROM helpdesk WHERE status='Submitted'"); // untuk Submited
+$com=mysqli_query($konek, "SELECT * FROM helpdesk WHERE status='Completed'"); // untuk Completed
+$pro=mysqli_query($konek, "SELECT * FROM helpdesk WHERE status='On Process'"); // untuk On Process
+$clo=mysqli_query($konek, "SELECT * FROM helpdesk WHERE status='Closed'"); // untuk Closed
 
 ?>
 <!DOCTYPE html>
@@ -94,19 +91,19 @@ $clo=mysql_query("SELECT * FROM helpdesk WHERE status='Closed'"); // untuk Close
 		
 				
 				<a href="#" class="but1" ><button class="btn btn-default" type="button" ><i class=""></i> Submited  <br><?php
-				echo "".mysql_num_rows($sub)."";
+				echo "".mysqli_num_rows($sub)."";
 				?></br></button>
 
 				<a href="#" class="but2"><button class="btn btn-danger" type="button" ><i class=""></i> On Process  <br><?php
-				echo "".mysql_num_rows($pro)."";
+				echo "".mysqli_num_rows($pro)."";
 				?></br></button>
 
 				<a href="#" class="but3"><button class="btn btn-info" type="button" ><i class=""></i> Completed  <br><?php
-				echo "".mysql_num_rows($com)."";
+				echo "".mysqli_num_rows($com)."";
 				?></br></button>
 
 				<a href="#" class="but4"><button class="btn btn-primary" type="button" ><i class=""></i> Closed  <br><?php
-				echo "".mysql_num_rows($clo)."";
+				echo "".mysqli_num_rows($clo)."";
 				?></br></button>
 
 				</a>
