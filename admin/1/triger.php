@@ -2,9 +2,6 @@
 				session_start();
 			include "../koneksi.php";
 					include "auth_user.php";
-					mysql_connect("localhost","root");
-					mysql_select_db("andd2478_spk");
-
 						$no_tiket = $_GET["no_tiket"];
 						$querymhs = mysqli_query ($konek, "SELECT helpdesk.no_tiket, helpdesk.nik, helpdesk.nama, log.ket, log.old_data, log.tgl_proses, log.date, log.new_data, log.noti
 							FROM helpdesk INNER JOIN log ON helpdesk.no_tiket = log.noti WHERE no_tiket='$no_tiket' ");
