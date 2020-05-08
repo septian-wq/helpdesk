@@ -40,7 +40,7 @@ try {
     $mail->setFrom('hrconsulting.tcu@gmail.com', 'Helpdesk');
     $mail->addAddress($email, $nama);     // Add a recipient
     
-    $body             = 
+    $body            = 
         "<body style='margin: 10px;'>
         <div style='width: 640px; font-family: Helvetica, sans-serif; font-size: 13px; padding:10px; line-height:150%; border:#eaeaea solid 10px;'>
         <br>
@@ -64,7 +64,7 @@ try {
         <br>
         </div>
         </body>";
-    $body             = eregi_replace("[\]",'',$body);
+    // $body             = eregi_replace('[\]','',$body);
    
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
