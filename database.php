@@ -3,9 +3,9 @@
 //=====================DATABASE CONNECTION===================
 
 $dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
-$dbName = 'andd2478_spk';
+$dbUser = 'helpdesk';
+$dbPass = 'helpdesk@corpu';
+$dbName = 'helpdesk';
 
 mysql_connect($dbHost, $dbUser, $dbPass) or die('<h1>Database Connection Error</h1>');
 mysql_selectdb($dbName) or die('<h1>Database read Error</h1>');

@@ -1,11 +1,14 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 session_start();
 include "../koneksi.php";
 include "auth_user.php";
 
- mysql_connect("localhost","root");
- mysql_select_db("andd2478_spk");
+// mysql_connect("localhost","helpdesk","helpdesk@corpu");
+// mysql_select_db("helpdesk");
 
 $query = "SELECT max(no_tiket) as maxKode FROM helpdesk";
 $hasil = mysqli_query($konek,$query);
@@ -23,7 +26,6 @@ $sub=mysql_query("SELECT * FROM helpdesk WHERE status='Submitted'"); // untuk Su
 $com=mysql_query("SELECT * FROM helpdesk WHERE status='Completed'"); // untuk Completed
 $pro=mysql_query("SELECT * FROM helpdesk WHERE status='On Process'"); // untuk On Process
 $clo=mysql_query("SELECT * FROM helpdesk WHERE status='Closed'"); // untuk Closed
-
 
 ?>
 <!DOCTYPE html>
