@@ -30,7 +30,10 @@ if ($add = mysqli_query($konek, "INSERT INTO helpdesk (no_tiket, nik, nama, no_h
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+
+
+  	$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+	$mail->SMTPDebug = 2; //Alternative to above constant
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -84,6 +87,7 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     $mail->MsgHTML($body);
     $mail->send();
+    $mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str";};
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
