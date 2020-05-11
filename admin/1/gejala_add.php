@@ -66,8 +66,7 @@ try {
         <b>Description  : </b>".$deskripsi."<p>
 		
 
-        <b>Helpdesk TCUC<b><p>
-        <b>Selamat pagi rekan HR Helpdesk,</b><br>
+       
         <b>Anda akan mendapatkan pemberitahuan dari perkembangan tiket Anda melalui email. Jika ada pertanyaan, silahkan menghubungi HR Helpdesk TCUC.</b><br>
         <br>
         <strong>* NOTES: Notifikasi ini terkirim secara otomatis, sehingga dimohon untuk tidak balas ke email ini. *</strong><p>

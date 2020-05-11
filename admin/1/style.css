@@ -1,20 +1,24 @@
 .but1 {
-	padding-left: 450px;
+	float: right;
+	padding-left: 10px;
 } 
 /* Hijau */
 
 .but2 {
+	float: right;
 	padding-left: 10px;
 }
  /* Biru */
 
 .but3{
+	float: right;
 	padding-left: 10px;
 } 
 /* Merah */
 
 .but4 
 {
+	float: right;
 	padding-left: 10px;
 }
 

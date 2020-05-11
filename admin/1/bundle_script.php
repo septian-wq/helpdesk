@@ -17,6 +17,7 @@
 	<script src="../aset/plugins/daterangepicker/daterangepicker.js"></script>
 	<script src="../aset/plugins/select2/select2.full.min.js"></script>
 	<script src="../aset/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	
 	<!-- page script -->
     <script>
       $(function () {	
@@ -99,8 +100,19 @@
 			});
 	});
 	
-
 	</script>
+
+
+<!-- 	<script>
+    	function ddlselected() 
+    	{
+    		var d=document.getElementById("kategori");
+    		var displaytext=d.options[d.selectedIndex].text;
+    		document.getElementById("txtvalue1").value=displaytext;
+    		// body...
+    	}
+
+    </script> -->
 
 	<!-- Javascript Delete -->
 	<script>

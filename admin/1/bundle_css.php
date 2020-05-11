@@ -20,3 +20,5 @@
     <link rel="stylesheet" href="../aset/dist/css/skins/_all-skins.min.css">
 	<link rel="stylesheet" href="../aset/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../1/style.css">
+
+    

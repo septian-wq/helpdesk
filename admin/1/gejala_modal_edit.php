@@ -28,6 +28,7 @@ while($mhs = mysqli_fetch_array($querymhs)){
 		  });
       });
     </script>
+
 <!-- Modal Popup Helpdesk -->
 			<div class="modal-dialog" tabindex="-1" role="dialog">
 				<div class="modal-content">
@@ -115,58 +116,21 @@ while($mhs = mysqli_fetch_array($querymhs)){
 										</div>
 										<select name="unit" class="form-control" id="unit" <?php echo $mhs["unit"]; ?> required>
 										  
-									      <option>AMA CopU</option>
-									      <option>AMMEERRA</option>
-									      <option>BKM</option>
-									      <option>BTP-KMCS</option>
-										
-										  <option>Business Enabler Academy</option>
+									       <option>Business Enabler Academy</option>
+										  <option>NITS Academy</option>
+										  <option>WINS Academy</option>
+										  <option>Enterprise Academy</option>
 									      <option>Consumer Academy</option>
-									      <option>DSP Academy</option>
-									      <option>Enterprise Academy</option>
-
-										  <option>General Support</option>
-									      <option>GeoFM</option>
-									      <option>GSD-BM</option>
-									      <option>GSD-Cleaning Service</option>
-
-									      <option>GSD-Security</option>
-									      <option>GSD-Teknisi CorpU</option>
-									      <option>GSD-Umum</option>
-									      <option>Infomedia</option>
-											
-										  <option>IS</option>
-									      <option>ISH-Infomedia</option>
-									      <option>KMCS</option>
-									      <option>Kopegtel Divlat Medan</option>
-										
-										  <option>Koperasi Jakarta</option>
-									      <option>Koperasi Makasar</option>
-									      <option>Koperasi Saraswati</option>
-									      <option>Koperasi Semarang</option>
-
-										  <option>Koperasi Surabaya</option>
 									      <option>Leadership Academy</option>
-									      <option>Learning Area 1</option>
-									      <option>Learning Area 2</option>
-										  <option>Learning Area 3</option>
-									      <option>Learning Area 4</option>
-											
 
-									      <option>Learning Area 5</option>
-									      <option>Learning Area 7</option>
-									      <option>Learning Operation</option>
+									      <option>DSP Academy</option>
 									      <option>Mobile Academy</option>
-									    	
-									      <option>NITS Academy</option>
-									      <option>Outsource Internal</option>
-									      <option>PNC</option>
-									      <option>PT.Panah Dunia Perkasa</option>
-
-										  <option>PT.Humanika Sarana Mandiri</option>
-									      <option>PT.Kurnia Oryza Reksa Perkasa</option>
-									      <option>SGM</option>
-									      <option>WINS Academy</option>
+										  <option>General Support</option>
+									      <option>Planning & Controlling</option>
+										  <option>KMCS</option>
+									      <option>Learning Operation/Learning Area</option>
+									      <option>GOFM</option>
+									   
 									    </select>	
 										<!-- <input name="unit" type="text" class="form-control" placeholder="unit"/> -->
 									</div>
@@ -181,29 +145,28 @@ while($mhs = mysqli_fetch_array($querymhs)){
 											<i class="fa fa-flag"></i>
 										</div>
 										<select name="jalur_helpdesk" class="form-control" id="jalur_helpdesk" <?php echo $mhs["jalur_helpdesk"];?> required>
-									      <option>Website</option>
-									      <option>Telephone</option>
+									      <option>Direct</option>
+									      <option>Call</option>
 									      <option>WhatsApp</option>
+									      <option>Telegram</option>
 									      <option>Email</option>
-									      <!-- <option>5</option> -->
 									    </select>	
 										<!-- <input name="jalur_helpdesk" type="text" class="form-control" placeholder="Jalur Helpdesk"/> -->
 									</div>
 							</div>
 							<div class="form-group col-md-6">
-								<label>Kategori</label>
+								<label>Kategori Masalah</label>
 									<div class="input-group">
 										<div class="input-group-addon">
 											<i class="fa fa-flag"></i>
 										</div>
-										<select name="kategori" class="form-control" id="kategori" <?php echo $mhs["kategori"]; ?> required>
-										  
-									      <option>Komunikasi</option>
-									      <option>Informasi</option>
-									     <!--  <option>3</option>
-									      <option>4</option>
-									      <option>5</option> -->
-									    </select>						
+										<input name="kategori" type="text" class="form-control" list="Masalah"
+										value="<?php echo $mhs["kategori"]; ?>">
+										    <datalist id="Masalah">
+										      <option value="Adm & Service">										      	
+										      <option value="Career & Development">
+										      <option value="HR Consulting">
+										    </datalist>						
 											<!-- <input name="kategori" type="text" class="form-control" placeholder="kategori"/> -->
 									</div>
 							</div>

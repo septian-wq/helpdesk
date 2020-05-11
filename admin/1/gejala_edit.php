@@ -55,7 +55,6 @@ try {
 		<b>Progres / Solusi  : </b>".$follow_up."<p>
 		
 
-        <b>Helpdesk TCUC<b><br>
         <b>Jika ada pertanyaan lebih lanjut, silahkan menghubungi HR Helpdesk TCUC.</b><br>
        
         <strong>* NOTES: Notifikasi ini terkirim secara otomatis, sehingga dimohon untuk tidak balas ke email ini. *</strong><p>
